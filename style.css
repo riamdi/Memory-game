@@ -1,0 +1,71 @@
+html {
+    box-sizing: border-box;
+    background-color: rgb(255, 200, 216);
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+.game {
+    margin: 0 auto;
+    padding: 0 5%;
+}
+.text {
+    text-align: center;
+}
+.title {
+    
+    font-size: 40px;
+    color: rgb(106, 0, 48);
+}
+.game_text{
+    margin: 0 auto;
+    max-width: 900px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e03263;
+}
+.game_attempts {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(106, 0, 48);;
+}
+.cards {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 130px);
+    grid-template-rows: repeat(4, 130px);
+    gap: 15px;
+    margin: 40px;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    border: 2px solid  rgb(241, 133, 164);
+    width: 130px;
+    height: 130px;
+    background-color: rgb(247, 152, 179);
+    margin: 5px 5px;
+}
+.num_card{
+    opacity: 0.2;
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn{
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+    height: 60px;
+    margin-bottom: 100px;
+    background-color: #f36a6a;
+    border: #f14677 2px solid;
+}
+
+.standart_color{
+    background-color: rgb(247, 152, 179);
+}
+.no_click{
+    pointer-events: none
+}
