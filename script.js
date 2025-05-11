@@ -1,4 +1,4 @@
-
+ 
 function color_card(card){
     if( card.classList.contains('standart_color')){
         card.classList.remove('standart_color')
@@ -66,8 +66,7 @@ for(let card of cards){
                     $("#loseModal").modal({
                         fadeDuration: 1000,    
                         fadeDelay: 0.50       
-                    });
-                    
+                    });                    
                 }
                 document.querySelector('.num_attempts').textContent = `${count}`
                 setTimeout(() => {
@@ -90,16 +89,11 @@ for(let card of cards){
                     });
                 }
             }
-
             arr_color_cards = []
             click = 0
         }
-    }
-    
+    }    
 }
-
-
-
 document.querySelector('.btn').onclick = () => {
     location.reload();
 }
