@@ -1,3 +1,4 @@
+
 function color_card(card){
     if( card.classList.contains('standart_color')){
         card.classList.remove('standart_color')
@@ -38,7 +39,7 @@ for(let card of cards){
     card.classList.add(`number_${arr_cards[num_card_arr]}`)
     num_card_arr += 1
 }
-
+let result = 0
 let count = 10
 let click = 0
 let arr_color_cards = []
@@ -80,6 +81,14 @@ for(let card of cards){
                 secondCard.classList.add('no_click')
                 secondCard.classList.add('flipped')
                 firstCard.classList.add('flipped')
+                result += 2
+                if (result === 16){
+                    document.querySelector('#final-attempts').textContent = `${10 - count}`
+                    $("#FinishModal").modal({
+                        fadeDuration: 1000,    
+                        fadeDelay: 0.50       
+                    });
+                }
             }
 
             arr_color_cards = []
@@ -88,6 +97,8 @@ for(let card of cards){
     }
     
 }
+
+
 
 document.querySelector('.btn').onclick = () => {
     location.reload();

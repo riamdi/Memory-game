@@ -69,3 +69,22 @@ html {
 .no_click{
     pointer-events: none
 }
+.modal_title {
+    text-align: center;
+}
+.modal_text {
+    text-align: center;
+}
+
+.modal_btn {
+    margin-top: 20px;
+    display: block;
+    margin: 0 auto;
+    background-color: #000000;
+    color: white;
+    border: none;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 15px;
+}

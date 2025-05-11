@@ -35,11 +35,16 @@
         <button class="btn">Новый раунд</button>
 
         <div id="loseModal" class="modal">
-            <h2>Игра окончена</h2>
-            <p>Увы! Попытки закончились, вы не успели найти все пары.</p>
-            <button onclick="location.reload()">Попробовать снова</button>
-            <a href="#" rel="modal:close">Закрыть</a>
+            <h2 class="modal_title">Игра окончена</h2>
+            <p class="modal_text">Увы! Попытки закончились, вы не успели найти все пары.</p>
+            <button class="modal_btn" onclick="location.reload()">Попробовать снова</button>
+
         </div>       
+            <div id="FinishModal" class="modal">
+            <h2 class="modal_title">Поздравляем!</h2>
+            <p class="modal_text">Вы нашли все пары за <span id="final-attempts">0</span> ходов!</p>
+            <button class="modal_btn" onclick="location.reload()">Новая игра</button>
+        </div>   
 </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
