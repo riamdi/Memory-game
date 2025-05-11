@@ -1,4 +1,3 @@
- 
 function color_card(card){
     if( card.classList.contains('standart_color')){
         card.classList.remove('standart_color')
